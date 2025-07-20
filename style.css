@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the border-radius is applied to corners */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+/* Table Header */
+thead th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+/* Timing Column */
+td:first-child b {
+    color: #c0392b;
+    font-size: 0.9em;
+}
+
+/* General Cell Content Styling */
+td span {
+    display: block;
+    line-height: 1.4;
+}
+
+.subject {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+}
+
+.teacher, .room {
+    font-size: 0.85em;
+    color: #555;
+}
+
+.room {
+    font-style: italic;
+}
+
+/* --- Subject Color Coding --- */
+.daa { background-color: #e9f5ff; } /* Light Blue */
+.pblj { background-color: #e8f9f0; } /* Light Green */
+.cc { background-color: #fff0f0; } /* Light Red */
+.adbms { background-color: #f3e8fd; } /* Light Purple */
+.acp { background-color: #fff9e6; } /* Light Orange */
+.cn { background-color: #e6fafc; } /* Light Teal */
+.os { background-color: #edf2ff; } /* Light Indigo */
+.soft-skills { background-color: #fff0f6; } /* Light Pink */
+.aptitude { background-color: #f5f5f5; } /* Light Gray */
+.empty { background-color: #fafafa; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8em;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    .subject {
+        font-size: 0.9em;
+    }
+    .teacher, .room {
+        font-size: 0.75em;
+    }
+}
